@@ -9,8 +9,8 @@ namespace Publix.Kafka
 {
     public interface IKafkaHelper
     {
-        Task<DeliveryResult<string, string>> ProduceKafkaMessageAsync(string key, string value);
+        Task<DeliveryResult<string, string>> ProduceKafkaMessageAsync(string topic, string key, string value);
 
-        ConsumeResult<string, string> ConsumeKafkaMessage();
+        ConsumeResult<string, string> ConsumeKafkaMessage(string topic);
     }
 }
