@@ -20,7 +20,6 @@ namespace Publix.Kafka
 
             IKafkaHelper kafkaProducerHelper = new KafkaHelper("appconfig.producer.json");
 
-
             ////Produce messages
             foreach (var item in topicSequence)
             {
