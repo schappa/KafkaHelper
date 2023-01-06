@@ -1,4 +1,5 @@
 ﻿using Confluent.Kafka;
+using KafkaHelper.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
@@ -64,5 +65,14 @@ namespace Publix.Kafka
                 .Build();
         }
 
+        public Task<DeliveryResult<string, string>> ProduceKafkaMessageWithSchemaRegistryAsync(string topic, string key, string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ConsumeResult<string, string> ConsumeKafkaMessageWithSchemaRegistry(string topic)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

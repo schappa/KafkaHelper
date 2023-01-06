@@ -1,10 +1,15 @@
 ﻿using Confluent.Kafka;
 using KafkaHelper.Extensions;
+using KafkaHelper.Interfaces;
 using System;
 
 
 namespace Publix.Kafka
 {
+
+    /// <summary>
+    /// This is a boiler plate app to highlight the functionality of the KafkaHelper
+    /// </summary>
     internal class Program
     {
         private static IList<int> topicSequence;

@@ -9,5 +9,8 @@
     "sasl.password": "DJ4Jnarn8R9P6JYuKfYHGJR3BjsAlmwn18HEo8tYKvP8/Lf9uaxKQaQdA7Ta47T/",
     "group.id": "Publix_Kafka_demo",
     "auto.offset.reset": "earliest"
+  },
+  "KafkaSchemaRegistry": {
+
   }
 }
